@@ -9,7 +9,8 @@
  background-color: rgb(4, 113, 166);
  border-color: rgb(172, 128, 160);
  border-radius: 20px;
- border-width: 20px;
+ border-width: 9px;
+ 
 }
 
 h1{
@@ -17,8 +18,48 @@ h1{
     background-color: #061826;
     color: #0471A6;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+   
 }
 .box{
     font-size: 100px;
     color: burlywood;
+    align-items: center;
+
+}
+.game1{
+  
+    background-color: #c4f5fc;
+    text-align: center;
+}
+
+.game2{
+    background-color: #E2A0FF;
+    text-align: center;;
+}
+
+.game3{
+    background-color: #B7FFD8;
+    text-align: center;
+}
+
+main{
+    background-color: #E8FFB7;
+}
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
