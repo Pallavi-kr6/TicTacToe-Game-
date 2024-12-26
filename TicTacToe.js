@@ -37,6 +37,7 @@ const checkWinner = () => {
 
         if (pos1Val === pos2Val && pos2Val === pos3Val && pos1Val !== "") {
             console.log(`${pos1Val} is the winner!`);
+            alert(`${pos1Val} is the winner!`)
             disableBoxes(); // Disable all boxes on win
             return;
         }
@@ -45,6 +46,7 @@ const checkWinner = () => {
     // Check for a draw (all boxes filled with no winner)
     if ([...boxes].every((box) => box.innerText !== "")) {
         console.log("It's a draw!");
+        alert("It's a draw!")
     }
 };
 
@@ -64,11 +66,12 @@ const enableBoxes = () => {
 };
 
 const resetGame = () => {
-    prompt("do you wanna continue")
-    if(prompt===true){
+    const userResponse=prompt("do you wanna continue")
+    if(userResponse && userResponse.toLowerCase()==="yes"){
     turnO = true; // Reset the turn
     enableBoxes(); // Clear and re-enable all boxes
     console.log("Game reset!");
+    alert("Game reset!")
     }
     else{
         alert("ok see you soon!")
